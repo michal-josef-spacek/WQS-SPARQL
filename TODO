@@ -1,7 +1,9 @@
 TODO
 ====
 1. Kouknout na wdq a udelat helper.
-2.
+2. Test pro query() s testovacim modulem pro LWP::UserAgent.
+3. Test pro query_count() s testovacim modulem pro LWP::UserAgent.
+4.
 
 Applied
 =======
