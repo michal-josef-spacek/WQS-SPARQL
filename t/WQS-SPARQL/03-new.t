@@ -5,15 +5,15 @@ use English;
 use Error::Pure::Utils qw(clean);
 use Test::More 'tests' => 3;
 use Test::NoWarnings;
-use Wikibase::WQS::SPARQL;
+use WQS::SPARQL;
 
 # Test.
-my $obj = Wikibase::WQS::SPARQL->new;
-isa_ok($obj, 'Wikibase::WQS::SPARQL');
+my $obj = WQS::SPARQL->new;
+isa_ok($obj, 'WQS::SPARQL');
 
 # Test.
 eval {
-	Wikibase::WQS::SPARQL->new(
+	WQS::SPARQL->new(
 		'lwp_user_agent' => 'bad',
 	);
 };

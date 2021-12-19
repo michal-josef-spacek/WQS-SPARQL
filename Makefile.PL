@@ -5,7 +5,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'Wikibase Wikidata Query Service SPARQL class.';
+abstract 'Wikidata Query Service SPARQL class.';
 author 'Michal Josef Spacek <skim@cpan.org>';
 author_requires 'English' => 0;
 author_requires 'File::Object' => 0.05;
@@ -14,14 +14,14 @@ author_requires 'Test::NoWarnings' => 0;
 author_requires 'Test::Pod' => 0;
 author_requires 'Test::Pod::Coverage' => 0;
 license 'bsd';
-name 'Wikibase-WQS-SPARQL';
+name 'WQS-SPARQL';
 perl_version 5.006002;
 readme_from 'SPARQL.pm';
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0.03;
-resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL/issues',
-resources 'homepage' => 'https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL';
-resources 'repository' => 'git://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL';
+resources 'bugtracker' => 'https://github.com/michal-josef-spacek/WQS-SPARQL/issues',
+resources 'homepage' => 'https://github.com/michal-josef-spacek/WQS-SPARQL';
+resources 'repository' => 'git://github.com/michal-josef-spacek/WQS-SPARQL';
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;

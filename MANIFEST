@@ -18,8 +18,8 @@ MANIFEST			This list of files
 META.yml
 README
 SPARQL.pm
-t/Wikibase-WQS-SPARQL/01-use.t
-t/Wikibase-WQS-SPARQL/02-version.t
-t/Wikibase-WQS-SPARQL/03-new.t
-xt/Wikibase-WQS-SPARQL/01-pod_coverage.t
-xt/Wikibase-WQS-SPARQL/02-pod.t
+t/WQS-SPARQL/01-use.t
+t/WQS-SPARQL/02-version.t
+t/WQS-SPARQL/03-new.t
+xt/WQS-SPARQL/01-pod_coverage.t
+xt/WQS-SPARQL/02-pod.t

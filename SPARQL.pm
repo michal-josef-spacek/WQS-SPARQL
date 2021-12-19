@@ -1,4 +1,4 @@
-package Wikibase::WQS::SPARQL;
+package WQS::SPARQL;
 
 use strict;
 use warnings;
@@ -93,13 +93,13 @@ __END__
 
 =head1 NAME
 
-Wikibase::WQS::SPARQL::Query::Count - Simple SPARQL Wikibase count query.
+WQS::SPARQL::Query::Count - Simple SPARQL count query for Wikidata Query Service.
 
 =head1 SYNOPSIS
 
- use Wikibase::WQS::SPARQL;
+ use WQS::SPARQL;
 
- my $obj = Wikibase::WQS::SPARQL->new;
+ my $obj = WQS::SPARQL->new;
  my $ret_hr = $obj->query($sparql);
  my $count = $obj->query_count($sparql_count);
 
@@ -107,7 +107,7 @@ Wikibase::WQS::SPARQL::Query::Count - Simple SPARQL Wikibase count query.
 
 =head2 C<new>
 
- my $obj = Wikibase::WQS::SPARQL->new;
+ my $obj = WQS::SPARQL->new;
 
 Constructor.
 
@@ -142,8 +142,8 @@ Returns number.
  use warnings;
 
  use Data::Printer;
- use Wikibase::WQS::SPARQL;
- use Wikibase::WQS::SPARQL::Query::Count;
+ use WQS::SPARQL;
+ use WQS::SPARQL::Query::Count;
 
  if (@ARGV < 1) {
          print STDERR "Usage: $0 ccnb\n";
@@ -151,8 +151,8 @@ Returns number.
  }
  my $ccnb = $ARGV[0];
 
- my $q = Wikibase::WQS::SPARQL->new;
- my $sparql = Wikibase::WQS::SPARQL::Query::Count->new->count_simple('P3184',
+ my $q = WQS::SPARQL->new;
+ my $sparql = WQS::SPARQL::Query::Count->new->count_simple('P3184',
          $ccnb);
  my $ret_hr = $q->query($sparql);
 
@@ -184,8 +184,8 @@ Returns number.
  use strict;
  use warnings;
 
- use Wikibase::WQS::SPARQL;
- use Wikibase::WQS::SPARQL::Query::Count;
+ use WQS::SPARQL;
+ use WQS::SPARQL::Query::Count;
 
  if (@ARGV < 1) {
          print STDERR "Usage: $0 ccnb\n";
@@ -193,8 +193,8 @@ Returns number.
  }
  my $ccnb = $ARGV[0];
 
- my $q = Wikibase::WQS::SPARQL->new;
- my $sparql = Wikibase::WQS::SPARQL::Query::Count->new->count_simple('P3184',
+ my $q = WQS::SPARQL->new;
+ my $sparql = WQS::SPARQL::Query::Count->new->count_simple('P3184',
          $ccnb);
  my $ret = $q->query_count($sparql);
 
@@ -221,7 +221,7 @@ L<URI::QueryParam>.
 
 =over
 
-=item L<Wikibase::WQS::SPARQL::Query>
+=item L<WQS::SPARQL::Query>
 
 Usefull Wikdata Query Service SPARQL queries.
 
@@ -229,7 +229,7 @@ Usefull Wikdata Query Service SPARQL queries.
 
 =head1 REPOSITORY
 
-L<https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL>
+L<https://github.com/michal-josef-spacek/WQS-SPARQL>
 
 =head1 AUTHOR
 

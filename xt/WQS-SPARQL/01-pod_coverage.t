@@ -5,4 +5,4 @@ use Test::NoWarnings;
 use Test::Pod::Coverage 'tests' => 2;
 
 # Test.
-pod_coverage_ok('Wikibase::WQS::SPARQL', 'Wikibase::WQS::SPARQL is covered.');
+pod_coverage_ok('WQS::SPARQL', 'WQS::SPARQL is covered.');

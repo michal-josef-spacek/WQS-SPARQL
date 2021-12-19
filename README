@@ -1,17 +1,17 @@
 NAME
-    Wikibase::WQS::SPARQL::Query::Count - Simple SPARQL Wikibase count
-    query.
+    WQS::SPARQL::Query::Count - Simple SPARQL count query for Wikidata Query
+    Service.
 
 SYNOPSIS
-     use Wikibase::WQS::SPARQL;
+     use WQS::SPARQL;
 
-     my $obj = Wikibase::WQS::SPARQL->new;
+     my $obj = WQS::SPARQL->new;
      my $ret_hr = $obj->query($sparql);
      my $count = $obj->query_count($sparql_count);
 
 METHODS
   "new"
-     my $obj = Wikibase::WQS::SPARQL->new;
+     my $obj = WQS::SPARQL->new;
 
     Constructor.
 
@@ -42,8 +42,8 @@ EXAMPLE1
      use warnings;
 
      use Data::Printer;
-     use Wikibase::WQS::SPARQL;
-     use Wikibase::WQS::SPARQL::Query::Count;
+     use WQS::SPARQL;
+     use WQS::SPARQL::Query::Count;
 
      if (@ARGV < 1) {
              print STDERR "Usage: $0 ccnb\n";
@@ -51,8 +51,8 @@ EXAMPLE1
      }
      my $ccnb = $ARGV[0];
 
-     my $q = Wikibase::WQS::SPARQL->new;
-     my $sparql = Wikibase::WQS::SPARQL::Query::Count->new->count_simple('P3184',
+     my $q = WQS::SPARQL->new;
+     my $sparql = WQS::SPARQL::Query::Count->new->count_simple('P3184',
              $ccnb);
      my $ret_hr = $q->query($sparql);
 
@@ -83,8 +83,8 @@ EXAMPLE2
      use strict;
      use warnings;
 
-     use Wikibase::WQS::SPARQL;
-     use Wikibase::WQS::SPARQL::Query::Count;
+     use WQS::SPARQL;
+     use WQS::SPARQL::Query::Count;
 
      if (@ARGV < 1) {
              print STDERR "Usage: $0 ccnb\n";
@@ -92,8 +92,8 @@ EXAMPLE2
      }
      my $ccnb = $ARGV[0];
 
-     my $q = Wikibase::WQS::SPARQL->new;
-     my $sparql = Wikibase::WQS::SPARQL::Query::Count->new->count_simple('P3184',
+     my $q = WQS::SPARQL->new;
+     my $sparql = WQS::SPARQL::Query::Count->new->count_simple('P3184',
              $ccnb);
      my $ret = $q->query_count($sparql);
 
@@ -111,11 +111,11 @@ DEPENDENCIES
     URI::QueryParam.
 
 SEE ALSO
-    Wikibase::WQS::SPARQL::Query
+    WQS::SPARQL::Query
         Usefull Wikdata Query Service SPARQL queries.
 
 REPOSITORY
-    <https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL>
+    <https://github.com/michal-josef-spacek/WQS-SPARQL>
 
 AUTHOR
     Michal Josef Špaček <mailto:skim@cpan.org>
