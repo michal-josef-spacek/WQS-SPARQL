@@ -1,6 +1,5 @@
 NAME
-    WQS::SPARQL::Query::Count - Simple SPARQL count query for Wikidata Query
-    Service.
+    WQS::SPARQL - Simple SPARQL query for Wikidata Query Service.
 
 SYNOPSIS
      use WQS::SPARQL;

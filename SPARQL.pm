@@ -93,7 +93,7 @@ __END__
 
 =head1 NAME
 
-WQS::SPARQL::Query::Count - Simple SPARQL count query for Wikidata Query Service.
+WQS::SPARQL - Simple SPARQL query for Wikidata Query Service.
 
 =head1 SYNOPSIS
 
