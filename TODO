@@ -4,8 +4,9 @@ TODO
 2. Test pro query() s testovacim modulem pro LWP::UserAgent.
 3. Test pro query_count() s testovacim modulem pro LWP::UserAgent.
 4. Better names in examples/ dir.
-5. Fix constructor parameters in doc.
 6.
 
 Applied
 =======
+5. Fix constructor parameters in doc.
+OK [20231129] skim

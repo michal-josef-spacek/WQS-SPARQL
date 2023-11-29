@@ -107,7 +107,7 @@ WQS::SPARQL - Simple SPARQL query for Wikidata Query Service.
 
  use WQS::SPARQL;
 
- my $obj = WQS::SPARQL->new;
+ my $obj = WQS::SPARQL->new(%params);
  my $ret_hr = $obj->query($sparql);
  my $count = $obj->query_count($sparql_count);
 
@@ -115,11 +115,36 @@ WQS::SPARQL - Simple SPARQL query for Wikidata Query Service.
 
 =head2 C<new>
 
- my $obj = WQS::SPARQL->new;
+ my $obj = WQS::SPARQL->new(%params);
 
 Constructor.
 
 =over
+
+=item * C<agent>
+
+User agent.
+
+Default value is 'WQS::SPARQL (__VERSION__)'.
+
+=item * C<lwp_user_agent>
+
+LWP::UserAgent object.
+
+Default value is instance of L<LWP::UserAgent> with constructor 'agent'
+parameter.
+
+=item * C<query_site>
+
+Query site.
+
+Default value is 'query.wikidata.org'.
+
+=item * C<sparql_endpoint>
+
+SPARQL endpoint.
+
+Default value is '/bigdata/namespace/wdq/sparql'.
 
 =item * C<verbose>
 
