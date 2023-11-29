@@ -14,6 +14,12 @@ METHODS
 
     Constructor.
 
+    *   "verbose"
+
+        Verbose mode.
+
+        Default value is 0.
+
     Returns instance of class.
 
   "query"
@@ -107,7 +113,7 @@ EXAMPLE2
 
 DEPENDENCIES
     Class::Utils, Error::Pure. HTTP::Request, JSON::XS, LWP::UserAgent, URI,
-    URI::QueryParam.
+    URI::QueryParam, Unicode::UTF8.
 
 SEE ALSO
     WQS::SPARQL::Query

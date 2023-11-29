@@ -32,6 +32,7 @@ requires:
   LWP::UserAgent: 0
   URI: 0
   URI::QueryParam: 0
+  Unicode::UTF8: 0
   perl: 5.6.2
 resources:
   bugtracker: https://github.com/michal-josef-spacek/WQS-SPARQL/issues

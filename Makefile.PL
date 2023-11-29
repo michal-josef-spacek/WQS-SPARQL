@@ -25,6 +25,7 @@ requires 'JSON::XS' => 0;
 requires 'LWP::UserAgent' => 0;
 requires 'URI' => 0;
 requires 'URI::QueryParam' => 0;
+requires 'Unicode::UTF8' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/WQS-SPARQL/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/WQS-SPARQL';
 resources 'repository' => 'git://github.com/michal-josef-spacek/WQS-SPARQL';
